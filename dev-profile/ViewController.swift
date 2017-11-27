@@ -9,17 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    /*
+     IBOutlets
+     */
+    
+    @IBOutlet weak var devProfileLogo: UIImageView!
+    
+    
+    /*
+     Functions
+     */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Want to round the corners of my Dev Profile Box.
+        devProfileLogo.layer.cornerRadius = 5
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
