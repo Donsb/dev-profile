@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
     
@@ -25,7 +26,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Want to round the corners of my Dev Profile Box.
-        devProfileLogo.layer.cornerRadius = 5
+        devProfileLogo.layer.cornerRadius = 20.0
+        devProfileLogo.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
